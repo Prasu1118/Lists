@@ -1,127 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>List</title>
-  </head>
-  <body>
-    <h1>Student Information Portal..🧑‍🎓📚</h1>
-    <hr />
-    <hr />
-    <h3><em>Academic Details..</em>👦</h3>
-    <ul>
-      <li><strong>Name:</strong> Nethi Prasanna kumar</li>
-      <li><strong>Degree:</strong>B.Tech</li>
-      <li><strong>Branch:</strong>Computer Science & Engineering</li>
-      <li><strong>Year:</strong>4th Year</li>
-      <li>
-        <strong>Collage:</strong>Chadalawada Ramanamma Engineering College
-      </li>
-      <li><strong>CGPA:</strong>8.27</li>
-    </ul>
-    <hr />
-    <h3><em>Academic Details..</em>📚</h3>
-    <ol type="i">
-      <li>Java Programming - 85</li>
-      <li>Data Structures - 80</li>
-      <li>Web Technologies - 90</li>
-      <li>Database Management Sytems - 78</li>
-      <li>Operating Systems - 82</li>
-    </ol>
-    <hr />
 
-    <h3><em>Daily Timetable..</em>⌛⏱️</h3>
-    <ol>
-      <li>
-        Morning
-        <ul>
-          <li>Java Practice</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Student Information Portal - Comprehensive academic details, skills, and personal information" />
+  <meta name="keywords" content="student, portfolio, academic details, skills, hobbies" />
+  <title>Student Information Portal | Academic Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <li>Aptitude</li>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-particles" aria-hidden="true">
+    <div class="particle-dot"></div>
+    <div class="particle-dot"></div>
+    <div class="particle-dot"></div>
+    <div class="particle-dot"></div>
+    <div class="particle-dot"></div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header" role="banner">
+    <h1 class="main-title" data-reveal="fade-up">
+      <span class="title-emoji">🧑‍🎓</span>
+      Student Information Portal
+      <span class="title-emoji">📚</span>
+    </h1>
+    <div class="header-divider"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Academic Details Section -->
+    <section class="info-section" aria-labelledby="academic-heading">
+      <h2 id="academic-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">👦</span>
+        <em>Academic Details</em>
+      </h2>
+
+      <article class="info-card glass-card" data-reveal="fade-up">
+        <ul class="info-list">
+          <li class="list-item">
+            <strong class="label">Name:</strong>
+            <span class="value">Nethi Prasanna kumar</span>
+          </li>
+          <li class="list-item">
+            <strong class="label">Degree:</strong>
+            <span class="value">B.Tech</span>
+          </li>
+          <li class="list-item">
+            <strong class="label">Branch:</strong>
+            <span class="value">Computer Science & Engineering</span>
+          </li>
+          <li class="list-item">
+            <strong class="label">Year:</strong>
+            <span class="value">4th Year</span>
+          </li>
+          <li class="list-item">
+            <strong class="label">College:</strong>
+            <span class="value">Chadalawada Ramanamma Engineering College</span>
+          </li>
+          <li class="list-item">
+            <strong class="label">CGPA:</strong>
+            <span class="value highlight">8.27</span>
+          </li>
         </ul>
-      </li>
-      <li>
-        Afternoon
-        <ul>
-          <li>Tap Classes</li>
+      </article>
+    </section>
 
-          <li>Practice</li>
+    <div class="section-divider"></div>
+
+    <!-- Subject Marks Section -->
+    <section class="info-section" aria-labelledby="marks-heading">
+      <h2 id="marks-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">📚</span>
+        <em>Subject Marks</em>
+      </h2>
+
+      <article class="info-card glass-card" data-reveal="fade-up">
+        <ol type="i" class="subject-list">
+          <li class="subject-item">
+            <span class="subject-name">Java Programming</span>
+            <span class="subject-score">85</span>
+          </li>
+          <li class="subject-item">
+            <span class="subject-name">Data Structures</span>
+            <span class="subject-score">80</span>
+          </li>
+          <li class="subject-item">
+            <span class="subject-name">Web Technologies</span>
+            <span class="subject-score highlight">90</span>
+          </li>
+          <li class="subject-item">
+            <span class="subject-name">Database Management Systems</span>
+            <span class="subject-score">78</span>
+          </li>
+          <li class="subject-item">
+            <span class="subject-name">Operating Systems</span>
+            <span class="subject-score">82</span>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Daily Timetable Section -->
+    <section class="info-section" aria-labelledby="timetable-heading">
+      <h2 id="timetable-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">⌛⏱️</span>
+        <em>Daily Timetable</em>
+      </h2>
+
+      <article class="info-card glass-card timeline-card" data-reveal="fade-up">
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <div class="time-marker"></div>
+            <strong class="time-period">Morning</strong>
+            <ul class="activity-list">
+              <li class="activity-item">Java Practice</li>
+              <li class="activity-item">Aptitude</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <div class="time-marker"></div>
+            <strong class="time-period">Afternoon</strong>
+            <ul class="activity-list">
+              <li class="activity-item">TAP Classes</li>
+              <li class="activity-item">Practice</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <div class="time-marker"></div>
+            <strong class="time-period">Evening</strong>
+            <ul class="activity-list">
+              <li class="activity-item">Frontend Learning</li>
+              <li class="activity-item">Mini Project Practice</li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Technical Skills Section -->
+    <section class="info-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">🧑‍💻⌨️</span>
+        <em>Technical Skills</em>
+      </h2>
+
+      <div class="skills-grid">
+        <article class="skill-card" data-reveal="zoom-in">
+          <h3 class="skill-category">JAVA</h3>
+          <ol type="a" class="skill-sublist">
+            <li>Core Java</li>
+            <li>OOP Concepts</li>
+            <li>Basic Programs</li>
+          </ol>
+        </article>
+
+        <article class="skill-card" data-reveal="zoom-in">
+          <h3 class="skill-category">FRONTEND</h3>
+          <ol type="a" class="skill-sublist">
+            <li>HTML Fundamentals</li>
+            <li>Lists and Forms</li>
+          </ol>
+        </article>
+
+        <article class="skill-card" data-reveal="zoom-in">
+          <h3 class="skill-category">APTITUDE</h3>
+          <ol type="a" class="skill-sublist">
+            <li>Quantitative Aptitude</li>
+            <li>Logical Reasoning</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Hobbies Section -->
+    <section class="info-section" aria-labelledby="hobbies-heading">
+      <h2 id="hobbies-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">🙉🙊🙈</span>
+        <em>Hobbies</em>
+      </h2>
+
+      <article class="info-card glass-card" data-reveal="fade-up">
+        <ul class="hobby-list">
+          <li class="hobby-item">Coding Practice</li>
+          <li class="hobby-item">Solving Aptitude Problems</li>
+          <li class="hobby-item">Playing Cricket</li>
+          <li class="hobby-item">Learning New Technologies</li>
         </ul>
-      </li>
-      <li>
-        Evening
-        <ul>
-          <li>Frontend Learning</li>
-          <li>Mini Project Practice</li>
-        </ul>
-      </li>
-    </ol>
-    <hr />
+      </article>
+    </section>
 
-    <h3><em>Technical Skills..</em>🧑‍💻⌨️</h3>
-    <ul type="disk">
-      <li>
-        JAVA
-        <ol type="a">
-          <li>Core Java</li>
-          <li>OOP Concepts</li>
-          <li>Basic Programs</li>
+    <div class="section-divider"></div>
+
+    <!-- Personal Information Section -->
+    <section class="info-section" aria-labelledby="personal-heading">
+      <h2 id="personal-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">🤷‍♂️🤫</span>
+        <em>Personal Information</em>
+      </h2>
+
+      <article class="info-card glass-card" data-reveal="fade-up">
+        <ol type="A" reversed class="personal-list">
+          <li class="list-item">
+            <strong class="label">Gmail:</strong>
+            <a href="mailto:prasannkumarnethi@gmail.com" class="link-email">
+              prasannkumarnethi@gmail.com
+            </a>
+          </li>
+          <li class="list-item">
+            <strong class="label">Ph.No:</strong>
+            <a href="tel:7780129317" class="link-phone">7780129317</a>
+          </li>
+          <li class="list-item">
+            <strong class="label">Address:</strong>
+            <span class="value">SPSR Nellore, AP.</span>
+          </li>
         </ol>
-      </li>
-    </ul>
+      </article>
+    </section>
 
-    <ul type="disk">
-      <li>
-        FRONTEND
-        <ol type="a">
-          <li>HTML Fundamentals</li>
-          <li>Lits and Forms</li>
-        </ol>
-      </li>
-    </ul>
+    <div class="section-divider"></div>
 
-    <ul type="disk">
-      <li>
-        APTITUDE
-        <ol type="a">
-          <li>Quantitative Aptitude</li>
-          <li>Logical Reasoning</li>
-        </ol>
-      </li>
-    </ul>
-    <hr />
+    <!-- Languages Section -->
+    <section class="info-section" aria-labelledby="languages-heading">
+      <h2 id="languages-heading" class="section-heading" data-reveal="slide-right">
+        <span class="heading-icon">🌐</span>
+        <em>Languages Known</em>
+      </h2>
 
-    <h3><em>Hobbies</em>🙉🙊🙈</h3>
-    <ul type="Square">
-      <li>Coding Practice</li>
-      <li>Solving Aptitude Problems</li>
-      <li>Playing Cricket</li>
-      <li>Learning New Technologies</li>
-    </ul>
-    <hr />
-
-    <h3><em>Personal information</em>🤷‍♂️🤫</h3>
-    <ol type="A" reversed>
-      <li><strong>Gmail:</strong>prasannkumarnethi@gmail.com</li>
-      <li><strong>Ph.No:</strong>7780129317</li>
-      <li><strong>Address:</strong>SPSR Nellore,AP.</li>
-    </ol>
-
-    <hr>
-
-    <dl>
-        <dt><strong><em>Languages Known:</em></strong></dt>
-        <dd></dd>
-            <ol type="I">
-                <li>English</li>
-                <li>Hindi</li>
-                <li>Telugu</li>
+      <article class="info-card glass-card" data-reveal="fade-up">
+        <dl class="definition-list">
+          <dt class="definition-term">
+            <strong><em>Languages:</em></strong>
+          </dt>
+          <dd class="definition-details">
+            <ol type="I" class="language-list">
+              <li class="language-item">English</li>
+              <li class="language-item">Hindi</li>
+              <li class="language-item">Telugu</li>
             </ol>
-        </dd>
-    </dl>
-    <hr>
-    <hr>
+          </dd>
+        </dl>
+      </article>
+    </section>
+  </main>
 
-  </body>
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-divider"></div>
+    <p class="footer-text">
+      © 2026 Student Information Portal.
+      <span class="footer-sparkle">✨</span>
+      Designed with excellence.
+    </p>
+  </footer>
+</body>
+
 </html>
